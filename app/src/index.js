@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
-import './index.css';
+import '././css/index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

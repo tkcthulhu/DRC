@@ -1,6 +1,6 @@
 import Blog_home from "./Blog_home";
 
-export function Blog_main(props) {
+function Blog_main(props) {
     return(
         <>
         </>

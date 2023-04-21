@@ -1,8 +1,6 @@
-function Contact(props) {
+export function Contact(props) {
     return (
         <>
         </>
     )
 }
-
-export default Contact;
