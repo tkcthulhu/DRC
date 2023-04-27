@@ -27,7 +27,7 @@ export function Header(props) {
                             <li>
                                 <div 
                                 className="text-white nav-button type1" 
-                                onClick={navigate('/')}
+                                onClick={() => {navigate('/')}}
                                 >
                                     Home
                                 </div>
@@ -35,7 +35,7 @@ export function Header(props) {
                             <li>
                             <div 
                                 className="text-white nav-button type1" 
-                                onClick={navigate('/about')}
+                                onClick={() => {navigate('/about')}}
                                 >
                                     About
                                 </div>
@@ -43,7 +43,7 @@ export function Header(props) {
                             <li>
                             <div 
                                 className="text-white nav-button type1" 
-                                onClick={navigate('/aervices')}
+                                onClick={() => {navigate('/services')}}
                                 >
                                     Services
                                 </div>
@@ -51,7 +51,7 @@ export function Header(props) {
                             <li>
                             <div 
                                 className="text-white nav-button type1" 
-                                onClick={navigate('/blog')}
+                                onClick={() => {navigate('/blog')}}
                                 >
                                     Blog
                                 </div>
@@ -59,7 +59,7 @@ export function Header(props) {
                             <li>
                             <div 
                                 className="text-white nav-button type1" 
-                                onClick={navigate('/gallery')}
+                                onClick={() => {navigate('/gallery')}}
                                 >
                                     Gallery
                                 </div>
@@ -67,7 +67,7 @@ export function Header(props) {
                             <li>
                             <div 
                                 className="text-white nav-button type1" 
-                                onClick={navigate('/contact')}
+                                onClick={() => {navigate('/contact')}}
                                 >
                                     Contact
                                 </div>
@@ -78,18 +78,6 @@ export function Header(props) {
                     </div>
                 </div>
             </div>
-                {/* <div class="px-3 py-2 border-bottom mb-3">
-                <div class="container d-flex flex-wrap justify-content-center">
-                    <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto">
-                    <input type="search" class="form-control" placeholder="Search..." aria-label="Search"/>
-                    </form>
-
-                    <div class="text-end">
-                    <button type="button" class="btn btn-light text-dark me-2">Login</button>
-                    <button type="button" class="btn btn-primary">Sign-up</button>
-                    </div>
-                </div>
-                </div> */}
         </header>
     )
 }
