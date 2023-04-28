@@ -2,3 +2,15 @@
     height:auto;
     width: 160px;
 }
+
+@media(max-width: 1200px) {
+    .header-lg {
+        display: none;
+    }
+}
+
+@media(min-width: 1200px) {
+    .header-sm {
+        display: none;
+    }
+}

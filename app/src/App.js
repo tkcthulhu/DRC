@@ -1,7 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 
 //Page Imports
-import { Layout } from './components/layout/Layout';
 import { Home } from './components/pages/Home';
 import { About } from './components/pages/About';
 import { Services_home, Commissioning, Consulting, PlanSpec, RetroFit } from "./components/pages/services/Services_main"
@@ -14,8 +13,7 @@ import '././css/App.css';
 function App() {
   return (
     <Routes>
-      <Route path='/' element={<Layout/>}>
-        <Route path='' element={<Home/>}/>
+        <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/services' element={<Services_home/>}>
           <Route path='commissioning' element={<Commissioning/>}/>
@@ -30,7 +28,6 @@ function App() {
           //For sub paths
         </Route>
         <Route path='/contact' element={<Contact/>}/>
-      </Route>
     </Routes>
   );
 }
