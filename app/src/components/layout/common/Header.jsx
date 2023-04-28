@@ -37,18 +37,39 @@ export function Header(props) {
                                         </div>
                                     </li>
                                     <li>
-                                    <div className="text-white nav-button type1 flex-shrink-0 dropdown dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false" >
+                                    <div 
+                                        className="text-white nav-button type1 flex-shrink-0 dropdown dropdown-toggle"
+                                        onClick={() => {navigate('/services')}}
+                                    >
                                             Services
-                                        <ul className="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
-                                            <li><a className="dropdown-item" href="#">All Services</a></li>
+                                        <ul className="dropdown-menu text-small shadow">
+                                            <li>
+                                                <a 
+                                                    className="dropdown-item" 
+                                                    href='/services/planspec'
+                                                >
+                                                    Plan Spec</a></li>
                                             <li><hr className="dropdown-divider"/></li>
-                                            <li><a className="dropdown-item" href="#">Plan Spec</a></li>
+                                            <li>
+                                                <a 
+                                                    className="dropdown-item" 
+                                                    href='/services/consulting'
+                                                >
+                                                    Consulting</a></li>
                                             <li><hr className="dropdown-divider"/></li>
-                                            <li><a className="dropdown-item" href="#">Consulting</a></li>
+                                            <li>
+                                                <a 
+                                                    className="dropdown-item" 
+                                                    href='/services/commissioning'
+                                                >
+                                                    Commissioning</a></li>
                                             <li><hr className="dropdown-divider"/></li>
-                                            <li><a className="dropdown-item" href="#">Commissioning</a></li>
-                                            <li><hr className="dropdown-divider"/></li>
-                                            <li><a className="dropdown-item" href="#">Retro Fit</a></li>
+                                            <li>
+                                                <a 
+                                                    className="dropdown-item" 
+                                                    href='/services/retrofit'
+                                                >
+                                                    Retro Fit</a></li>
                                         </ul>
                                     </div>
                                     </li>
@@ -85,51 +106,110 @@ export function Header(props) {
         </header>
         <div className="mobile offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style={{width: 'fit-content'}}>
             <div className="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style={{width: 280 + 'px', height: 100 + 'vh'}}>
-                <a href="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                <a 
+                    className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
+                    onClick={() => {navigate('/')}}
+                >
                     <img src={logo} className="main-logo"></img>
                 </a>
                 <hr/>
                 <ul className="nav nav-pills flex-column mb-auto">
                 <li className="nav-item">
-                    <a href="#" className="nav-link active" aria-current="page">
+                    <a 
+                        className="nav-link active" 
+                        onClick={() => {navigate('/')}}
+                        aria-current="page"
+                    >
                     Home
                     </a>
                 </li>
                 <li>
-                    <a href="#" className="nav-link text-white">
+                    <a 
+                        className="nav-link text-white"
+                        onClick={() => {navigate('/about')}}
+                    >
                     About
                     </a>
                 </li>
                 <li>
                     <div className="dropdown">
-                        <a href="#" className="nav-link text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a 
+                            className="nav-link text-white text-decoration-none dropdown-toggle" 
+                            id="dropdownUser1" 
+                            data-bs-toggle="dropdown" 
+                            aria-expanded="false"
+                        >
                             Services
                         </a>
                         <ul className="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
-                            <li><a className="dropdown-item" href="#">All Services</a></li>
+                            <li>
+                                <a 
+                                    className="dropdown-item" 
+                                    onClick={() => {navigate('/services')}}
+                                >
+                                    All Services
+                                </a>
+                            </li>
                             <li><hr className="dropdown-divider"/></li>
-                            <li><a className="dropdown-item" href="#">Plan Spec</a></li>
+                            <li>
+                                <a 
+                                    className="dropdown-item" 
+                                    onClick={() => {navigate('/services/planspec')}}
+                                >
+                                    Plan Spec
+                                </a>
+                            </li>
                             <li><hr className="dropdown-divider"/></li>
-                            <li><a className="dropdown-item" href="#">Consulting</a></li>
+                            <li>
+                                <a 
+                                    className="dropdown-item" 
+                                    onClick={() => {navigate('/services/consulting')}}
+                                >
+                                    Consulting
+                                </a>
+                            </li>
                             <li><hr className="dropdown-divider"/></li>
-                            <li><a className="dropdown-item" href="#">Commissioning</a></li>
+                            <li>
+                                <a 
+                                    className="dropdown-item" 
+                                    onClick={() => {navigate('/services/commissioning')}}
+                                >
+                                    Commissioning
+                                </a>
+                            </li>
                             <li><hr className="dropdown-divider"/></li>
-                            <li><a className="dropdown-item" href="#">Retro Fit</a></li>
+                            <li>
+                                <a 
+                                    className="dropdown-item" 
+                                    onClick={() => {navigate('/services/retrofit')}}
+                                >
+                                    Retro Fit
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </li>
                 <li>
-                    <a href="#" className="nav-link text-white">
+                    <a  
+                        className="nav-link text-white"
+                        onClick={() => {navigate('/blog')}}
+                    >
                     Blog
                     </a>
                 </li>
                 <li>
-                    <a href="#" className="nav-link text-white">
+                    <a  
+                        className="nav-link text-white"
+                        onClick={() => {navigate('/gallery')}}
+                    >
                     Gallery
                     </a>
                 </li>
                 <li>
-                    <a href="#" className="nav-link text-white">
+                    <a  
+                        className="nav-link text-white"
+                        onClick={() => {navigate('/contact')}}
+                    >
                     Contact
                     </a>
                 </li>
