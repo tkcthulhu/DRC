@@ -6,3 +6,8 @@
 .dropdown:hover .dropdown-menu {
     display:block;
 }
+
+.layout-bg {
+    background-image: url('../images/banner-LG.png');
+    background-size: 100% auto;
+}

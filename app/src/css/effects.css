@@ -2,7 +2,7 @@
   position: relative;
   padding: 15px !important;
   border: none;
-  background-color: transparent;
+  background-color: rgba(90, 34, 139, 0.4);
   cursor: pointer;
   outline: none;
   font-size: 18px;

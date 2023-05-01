@@ -11,7 +11,7 @@ export function Header(props) {
     return(
         <>
         <header className="desktop">
-            <div className="px-3 py-2 bg-dark text-white">
+            <div className="px-3 py-2 layout-bg text-white">
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-2">
@@ -25,7 +25,7 @@ export function Header(props) {
                                         className="text-white nav-button type1" 
                                         onClick={() => {navigate('/')}}
                                         >
-                                            Home
+                                            <b>Home</b>
                                         </div>
                                     </li>
                                     <li>
@@ -33,7 +33,7 @@ export function Header(props) {
                                         className="text-white nav-button type1" 
                                         onClick={() => {navigate('/about')}}
                                         >
-                                            About
+                                            <b>About</b>
                                         </div>
                                     </li>
                                     <li>
@@ -41,35 +41,35 @@ export function Header(props) {
                                         className="text-white nav-button type1 flex-shrink-0 dropdown dropdown-toggle"
                                         onClick={() => {navigate('/services')}}
                                     >
-                                            Services
+                                            <b>Services</b>
                                         <ul className="dropdown-menu text-small shadow">
                                             <li>
                                                 <a 
                                                     className="dropdown-item" 
                                                     href='/services/planspec'
                                                 >
-                                                    Plan Spec</a></li>
+                                                    <b>Plan Spec</b></a></li>
                                             <li><hr className="dropdown-divider"/></li>
                                             <li>
                                                 <a 
                                                     className="dropdown-item" 
                                                     href='/services/consulting'
                                                 >
-                                                    Consulting</a></li>
+                                                    <b>Consulting</b></a></li>
                                             <li><hr className="dropdown-divider"/></li>
                                             <li>
                                                 <a 
                                                     className="dropdown-item" 
                                                     href='/services/commissioning'
                                                 >
-                                                    Commissioning</a></li>
+                                                    <b>Commissioning</b></a></li>
                                             <li><hr className="dropdown-divider"/></li>
                                             <li>
                                                 <a 
                                                     className="dropdown-item" 
                                                     href='/services/retrofit'
                                                 >
-                                                    Retro Fit</a></li>
+                                                    <b>Retro Fit</b></a></li>
                                         </ul>
                                     </div>
                                     </li>
@@ -78,7 +78,7 @@ export function Header(props) {
                                         className="text-white nav-button type1" 
                                         onClick={() => {navigate('/blog')}}
                                         >
-                                            Blog
+                                            <b>Blog</b>
                                         </div>
                                     </li>
                                     <li>
@@ -86,7 +86,7 @@ export function Header(props) {
                                         className="text-white nav-button type1" 
                                         onClick={() => {navigate('/gallery')}}
                                         >
-                                            Gallery
+                                            <b>Gallery</b>
                                         </div>
                                     </li>
                                     <li>
@@ -94,7 +94,7 @@ export function Header(props) {
                                         className="text-white nav-button type1" 
                                         onClick={() => {navigate('/contact')}}
                                         >
-                                            Contact
+                                            <b>Contact</b>
                                         </div>
                                     </li>
                                 </ul>
