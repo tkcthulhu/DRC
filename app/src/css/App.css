@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background-image: url('../images/banner-LG.jpeg');
+  background-size: 100%;
+  height: 100vw;
+  width: auto;
+}

@@ -11,7 +11,7 @@ export function Header(props) {
     return(
         <>
         <header className="desktop">
-            <div className="px-3 py-2 layout-bg text-white">
+            <div className="px-3 py-2 bg-dark text-white">
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-2">
@@ -22,7 +22,7 @@ export function Header(props) {
                                 <ul className="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
                                     <li>
                                         <div 
-                                        className="text-white nav-button type1" 
+                                        className="text-white nav-button type1 bg-dark" 
                                         onClick={() => {navigate('/')}}
                                         >
                                             <b>Home</b>
@@ -30,7 +30,7 @@ export function Header(props) {
                                     </li>
                                     <li>
                                     <div 
-                                        className="text-white nav-button type1" 
+                                        className="text-white nav-button type1 bg-dark" 
                                         onClick={() => {navigate('/about')}}
                                         >
                                             <b>About</b>
@@ -38,35 +38,35 @@ export function Header(props) {
                                     </li>
                                     <li>
                                     <div 
-                                        className="text-white nav-button type1 flex-shrink-0 dropdown dropdown-toggle"
+                                        className="text-white nav-button type1 flex-shrink-0 dropdown dropdown-toggle bg-dark"
                                         onClick={() => {navigate('/services')}}
                                     >
                                             <b>Services</b>
-                                        <ul className="dropdown-menu text-small shadow">
+                                        <ul className="dropdown-menu text-small shadow bg-dark">
                                             <li>
                                                 <a 
-                                                    className="dropdown-item" 
+                                                    className="dropdown-item text-white" 
                                                     href='/services/planspec'
                                                 >
                                                     <b>Plan Spec</b></a></li>
                                             <li><hr className="dropdown-divider"/></li>
                                             <li>
                                                 <a 
-                                                    className="dropdown-item" 
+                                                    className="dropdown-item text-white" 
                                                     href='/services/consulting'
                                                 >
                                                     <b>Consulting</b></a></li>
                                             <li><hr className="dropdown-divider"/></li>
                                             <li>
                                                 <a 
-                                                    className="dropdown-item" 
+                                                    className="dropdown-item text-white" 
                                                     href='/services/commissioning'
                                                 >
                                                     <b>Commissioning</b></a></li>
                                             <li><hr className="dropdown-divider"/></li>
                                             <li>
                                                 <a 
-                                                    className="dropdown-item" 
+                                                    className="dropdown-item text-white" 
                                                     href='/services/retrofit'
                                                 >
                                                     <b>Retro Fit</b></a></li>
@@ -75,7 +75,7 @@ export function Header(props) {
                                     </li>
                                     <li>
                                     <div 
-                                        className="text-white nav-button type1" 
+                                        className="text-white nav-button type1 bg-dark" 
                                         onClick={() => {navigate('/blog')}}
                                         >
                                             <b>Blog</b>
@@ -83,7 +83,7 @@ export function Header(props) {
                                     </li>
                                     <li>
                                     <div 
-                                        className="text-white nav-button type1" 
+                                        className="text-white nav-button type1 bg-dark" 
                                         onClick={() => {navigate('/gallery')}}
                                         >
                                             <b>Gallery</b>
@@ -91,7 +91,7 @@ export function Header(props) {
                                     </li>
                                     <li>
                                     <div 
-                                        className="text-white nav-button type1" 
+                                        className="text-white nav-button type1 bg-dark" 
                                         onClick={() => {navigate('/contact')}}
                                         >
                                             <b>Contact</b>
@@ -104,6 +104,14 @@ export function Header(props) {
                 </div>
             </div>
         </header>
+        <nav class="mobile navbar navbar-light bg-dark">
+            <div class="container-fluid">
+                <img src={logo} className="mobile-logo"></img>
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <i class="bi bi-list white menu-icon"></i>
+                </button>
+            </div>
+        </nav>
         <div className="mobile offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style={{width: 'fit-content'}}>
             <div className="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style={{width: 280 + 'px', height: 100 + 'vh'}}>
                 <a 
