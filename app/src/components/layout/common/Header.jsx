@@ -1,86 +1,230 @@
-function Header(props) {
+import { useNavigate } from "react-router-dom";
 
+import logo from  "../../../images/DRC-Art-128x128.png";
+import '../../../css/header.css';
+import '../../../css/effects.css';
+
+export function Header(props) {
+
+    const navigate = useNavigate();
 
     return(
-        // <ul class="nav nav-tabs">
-        //     <li class="nav-item">
-        //         <a class="nav-link active" aria-current="page" href="#">About</a>
-        //     </li>
-        //     <li class="nav-item dropdown">
-        //         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Services</a>
-        //         <ul class="dropdown-menu">
-        //         <li><a class="dropdown-item" href="#">Plan Spec</a></li>
-        //         <li><a class="dropdown-item" href="#">Retro Fitting</a></li>
-        //         <li><hr class="dropdown-divider"/></li>
-        //         <li><a class="dropdown-item" href="#">Commissioning</a></li>
-        //         <li><a class="dropdown-item" href="#">Consulting</a></li>
-        //         </ul>
-        //     </li>
-        //     <li class="nav-item">
-        //         <a class="nav-link" href="#">Link</a>
-        //     </li>
-        //     <li class="nav-item">
-        //         <a class="nav-link" href="#" tabindex="-1" >Disabled</a>
-        //     </li>
-        // </ul>
-
-        <header>
-            <div class="px-3 py-2 bg-dark text-white">
-                <div class="container">
-                    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                    <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-                        <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
-                    </a>
-
-                    <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-                        <li>
-                        <a href="#" class="nav-link text-secondary">
-                            <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"></use></svg>
-                            Home
-                        </a>
-                        </li>
-                        <li>
-                        <a href="#" class="nav-link text-white">
-                            <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#speedometer2"></use></svg>
-                            Dashboard
-                        </a>
-                        </li>
-                        <li>
-                        <a href="#" class="nav-link text-white">
-                            <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#table"></use></svg>
-                            Orders
-                        </a>
-                        </li>
-                        <li>
-                        <a href="#" class="nav-link text-white">
-                            <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"></use></svg>
-                            Products
-                        </a>
-                        </li>
-                        <li>
-                        <a href="#" class="nav-link text-white">
-                            <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"></use></svg>
-                            Customers
-                        </a>
-                        </li>
-                    </ul>
-                    </div>
-                </div>
-                </div>
-                <div class="px-3 py-2 border-bottom mb-3">
-                <div class="container d-flex flex-wrap justify-content-center">
-                    <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto">
-                    <input type="search" class="form-control" placeholder="Search..." aria-label="Search"/>
-                    </form>
-
-                    <div class="text-end">
-                    <button type="button" class="btn btn-light text-dark me-2">Login</button>
-                    <button type="button" class="btn btn-primary">Sign-up</button>
+        <>
+        <header className="desktop">
+            <div className="px-3 py-2 bg-dark text-white">
+                <div className="container-fluid">
+                    <div className="row">
+                        <div className="col-2">
+                            <img src={logo} className="main-logo"></img>
+                        </div>
+                        <div className="col-8">
+                            <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                                <ul className="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                                    <li>
+                                        <div 
+                                        className="text-white nav-button type1 bg-dark" 
+                                        onClick={() => {navigate('/')}}
+                                        >
+                                            <b>Home</b>
+                                        </div>
+                                    </li>
+                                    <li>
+                                    <div 
+                                        className="text-white nav-button type1 bg-dark" 
+                                        onClick={() => {navigate('/about')}}
+                                        >
+                                            <b>About</b>
+                                        </div>
+                                    </li>
+                                    <li>
+                                    <div 
+                                        className="text-white nav-button type1 flex-shrink-0 dropdown dropdown-toggle bg-dark"
+                                        onClick={() => {navigate('/services')}}
+                                    >
+                                            <b>Services</b>
+                                        <ul className="dropdown-menu text-small shadow bg-dark">
+                                            <li>
+                                                <a 
+                                                    className="dropdown-item text-white" 
+                                                    href='/services/planspec'
+                                                >
+                                                    <b>Plan Spec</b></a></li>
+                                            <li><hr className="dropdown-divider"/></li>
+                                            <li>
+                                                <a 
+                                                    className="dropdown-item text-white" 
+                                                    href='/services/consulting'
+                                                >
+                                                    <b>Consulting</b></a></li>
+                                            <li><hr className="dropdown-divider"/></li>
+                                            <li>
+                                                <a 
+                                                    className="dropdown-item text-white" 
+                                                    href='/services/commissioning'
+                                                >
+                                                    <b>Commissioning</b></a></li>
+                                            <li><hr className="dropdown-divider"/></li>
+                                            <li>
+                                                <a 
+                                                    className="dropdown-item text-white" 
+                                                    href='/services/retrofit'
+                                                >
+                                                    <b>Retro Fit</b></a></li>
+                                        </ul>
+                                    </div>
+                                    </li>
+                                    <li>
+                                    <div 
+                                        className="text-white nav-button type1 bg-dark" 
+                                        onClick={() => {navigate('/blog')}}
+                                        >
+                                            <b>Blog</b>
+                                        </div>
+                                    </li>
+                                    <li>
+                                    <div 
+                                        className="text-white nav-button type1 bg-dark" 
+                                        onClick={() => {navigate('/gallery')}}
+                                        >
+                                            <b>Gallery</b>
+                                        </div>
+                                    </li>
+                                    <li>
+                                    <div 
+                                        className="text-white nav-button type1 bg-dark" 
+                                        onClick={() => {navigate('/contact')}}
+                                        >
+                                            <b>Contact</b>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </header>
+        <nav class="mobile navbar navbar-light bg-dark">
+            <div class="container-fluid">
+                <img src={logo} className="mobile-logo"></img>
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <i class="bi bi-list white menu-icon"></i>
+                </button>
+            </div>
+        </nav>
+        <div className="mobile offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style={{width: 'fit-content'}}>
+            <div className="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style={{width: 280 + 'px', height: 100 + 'vh'}}>
+                <a 
+                    className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
+                    onClick={() => {navigate('/')}}
+                >
+                    <img src={logo} className="main-logo"></img>
+                </a>
+                <hr/>
+                <ul className="nav nav-pills flex-column mb-auto">
+                <li className="nav-item">
+                    <a 
+                        className="nav-link active" 
+                        onClick={() => {navigate('/')}}
+                        aria-current="page"
+                    >
+                    Home
+                    </a>
+                </li>
+                <li>
+                    <a 
+                        className="nav-link text-white"
+                        onClick={() => {navigate('/about')}}
+                    >
+                    About
+                    </a>
+                </li>
+                <li>
+                    <div className="dropdown">
+                        <a 
+                            className="nav-link text-white text-decoration-none dropdown-toggle" 
+                            id="dropdownUser1" 
+                            data-bs-toggle="dropdown" 
+                            aria-expanded="false"
+                        >
+                            Services
+                        </a>
+                        <ul className="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+                            <li>
+                                <a 
+                                    className="dropdown-item" 
+                                    onClick={() => {navigate('/services')}}
+                                >
+                                    All Services
+                                </a>
+                            </li>
+                            <li><hr className="dropdown-divider"/></li>
+                            <li>
+                                <a 
+                                    className="dropdown-item" 
+                                    onClick={() => {navigate('/services/planspec')}}
+                                >
+                                    Plan Spec
+                                </a>
+                            </li>
+                            <li><hr className="dropdown-divider"/></li>
+                            <li>
+                                <a 
+                                    className="dropdown-item" 
+                                    onClick={() => {navigate('/services/consulting')}}
+                                >
+                                    Consulting
+                                </a>
+                            </li>
+                            <li><hr className="dropdown-divider"/></li>
+                            <li>
+                                <a 
+                                    className="dropdown-item" 
+                                    onClick={() => {navigate('/services/commissioning')}}
+                                >
+                                    Commissioning
+                                </a>
+                            </li>
+                            <li><hr className="dropdown-divider"/></li>
+                            <li>
+                                <a 
+                                    className="dropdown-item" 
+                                    onClick={() => {navigate('/services/retrofit')}}
+                                >
+                                    Retro Fit
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a  
+                        className="nav-link text-white"
+                        onClick={() => {navigate('/blog')}}
+                    >
+                    Blog
+                    </a>
+                </li>
+                <li>
+                    <a  
+                        className="nav-link text-white"
+                        onClick={() => {navigate('/gallery')}}
+                    >
+                    Gallery
+                    </a>
+                </li>
+                <li>
+                    <a  
+                        className="nav-link text-white"
+                        onClick={() => {navigate('/contact')}}
+                    >
+                    Contact
+                    </a>
+                </li>
+                </ul>
+                <hr/>
+            </div>
+        </div>
+        </>
     )
 }
-
-export default Header;

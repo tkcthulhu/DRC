@@ -1,8 +1,7 @@
-function Home(props) {
+export function Home(props) {
     return (
         <>
+
         </>
     )
 }
-
-export default Home;

@@ -1,0 +1,21 @@
+.main-logo {
+    height:auto;
+    width: 160px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display:block;
+}
+
+.mobile-logo {
+    height: 7.5vh;
+    width:auto;
+}
+
+.white {
+    color: white;
+}
+
+.menu-icon {
+    font-size: 1.5em;
+}
