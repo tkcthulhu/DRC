@@ -1,8 +1,6 @@
-function About(props) {
+export function About(props) {
     return (
         <>
         </>
     )
 }
-
-export default About;
