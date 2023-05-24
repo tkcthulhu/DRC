@@ -1,6 +1,8 @@
 import { useNavigate } from "react-router-dom";
 
 import logo from  "../../../images/DRC-Art-128x128.png";
+import header_bg from "../../../images/header-bg.jpeg";
+
 import '../../../css/header.css';
 import '../../../css/effects.css';
 
@@ -11,7 +13,7 @@ export function Header(props) {
     return(
         <>
         <header className="desktop">
-            <div className="px-3 py-2 bg-dark text-white">
+            <div className="px-3 py-2 bg-dark text-white" style={{backgroundImage: `url(${header_bg})`}}>
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-2">
@@ -25,7 +27,7 @@ export function Header(props) {
                                         className="text-white nav-button type1 bg-dark" 
                                         onClick={() => {navigate('/')}}
                                         >
-                                            <b>Home</b>
+                                            <b>HOME</b>
                                         </div>
                                     </li>
                                     <li>
@@ -33,7 +35,7 @@ export function Header(props) {
                                         className="text-white nav-button type1 bg-dark" 
                                         onClick={() => {navigate('/about')}}
                                         >
-                                            <b>About</b>
+                                            <b>ABOUT</b>
                                         </div>
                                     </li>
                                     <li>
@@ -41,7 +43,7 @@ export function Header(props) {
                                         className="text-white nav-button type1 flex-shrink-0 dropdown dropdown-toggle bg-dark"
                                         onClick={() => {navigate('/services')}}
                                     >
-                                            <b>Services</b>
+                                            <b>SERVICES</b>
                                         <ul className="dropdown-menu text-small shadow bg-dark">
                                             <li>
                                                 <a 
@@ -78,7 +80,7 @@ export function Header(props) {
                                         className="text-white nav-button type1 bg-dark" 
                                         onClick={() => {navigate('/blog')}}
                                         >
-                                            <b>Blog</b>
+                                            <b>BLOG</b>
                                         </div>
                                     </li>
                                     <li>
@@ -86,7 +88,7 @@ export function Header(props) {
                                         className="text-white nav-button type1 bg-dark" 
                                         onClick={() => {navigate('/gallery')}}
                                         >
-                                            <b>Gallery</b>
+                                            <b>GALLERY</b>
                                         </div>
                                     </li>
                                     <li>
@@ -94,7 +96,7 @@ export function Header(props) {
                                         className="text-white nav-button type1 bg-dark" 
                                         onClick={() => {navigate('/contact')}}
                                         >
-                                            <b>Contact</b>
+                                            <b>CONTACT</b>
                                         </div>
                                     </li>
                                 </ul>
