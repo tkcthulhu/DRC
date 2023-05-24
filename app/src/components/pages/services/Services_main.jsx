@@ -4,7 +4,7 @@ import Consulting from './categories/Consulting';
 import PlanSpec from './categories/PlanSpec';
 import RetroFit from './categories/RetroFit';
 
-export function Services_main(props) {
+function Services_main(props) {
     return (
         <>
         </>
