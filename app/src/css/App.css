@@ -51,7 +51,7 @@ body {
 
 h1, .heading-1 {
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 @media (min-width: 1200px) {
@@ -70,4 +70,9 @@ h1, .heading-1 {
   h1, .heading-1 {
     font-size: 70px;
   }
+}
+.text-shadow {
+  text-shadow: -1px 1px 0 #000,
+  1px 1px 0 #000,
+ 1px -1px 0 #000;
 }

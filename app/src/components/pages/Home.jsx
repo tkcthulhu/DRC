@@ -6,6 +6,8 @@ import '../../css/home.css';
 import slider_1 from '../../images/Slide_1.jpeg';
 import slider_2 from '../../images/Slide_2.jpeg';
 import slider_3 from '../../images/Slide_3.jpeg';
+import slider_4 from '../../images/Slide_4.jpeg';
+import slider_5 from '../../images/Slide_5.jpeg';
 
 import logo from '../../images/DRC-Art-128x128.png';
 
@@ -27,8 +29,6 @@ export function Home(props) {
                                 <div className="col-10 d-flex justify-content-center">
                                     <h1 className="heading-1 text-center">
                                         Welcome to Dead Right Controls, your gateway to the forefront of automation innovation.
-                                        <br/><br/>
-                                        Step inside and witness the transformative power of cutting-edge automation solutions that propel your operations to new heights.
                                     </h1>
                                 </div>
                             </div>
@@ -45,6 +45,27 @@ export function Home(props) {
                 </Carousel.Item>
                 <Carousel.Item className='carousel-item'>
                     <div className="d-block w-100 carousel-slide" style={{backgroundImage: `url(${slider_2}`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover',}}>
+                        <div className="container-fluid text-white">
+                            <div className="row justify-content-center">
+                                <div className="col-10 d-flex justify-content-center">
+                                    <h1 className="heading-1 text-center">
+                                        Step inside and witness the transformative power of cutting-edge automation solutions that propel your operations to new heights.
+                                    </h1>
+                                </div>
+                            </div>
+                            <div className="row justify-content-center">
+                                <div className="col">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <Carousel.Caption>
+                    <h3>SEE WHAT DRC CAN DO FOR YOU</h3>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item className='carousel-item'>
+                    <div className="d-block w-100 carousel-slide" style={{backgroundImage: `url(${slider_3}`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover',}}>
                         <div className="container-fluid text-white carousel-container">
                             <div className="row justify-content-center">
                                 <div className="col-10 d-flex justify-content-center">
@@ -65,13 +86,32 @@ export function Home(props) {
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className='carousel-item'>
-                    <div className="d-block w-100 carousel-slide" style={{backgroundImage: `url(${slider_3}`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover',}}>
+                    <div className="d-block w-100 carousel-slide" style={{backgroundImage: `url(${slider_4}`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover',}}>
                         <div className="container-fluid text-white">
                             <div className="row justify-content-center">
                                 <div className="col-10 d-flex justify-content-center">
                                     <h1 className="heading-1 text-center">
                                         Experience the next generation of automation at Dead Right Controls, where the future becomes reality.
-                                        <br/><br/>
+                                    </h1>
+                                </div>
+                            </div>
+                            <div className="row justify-content-center">
+                                <div className="col">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <Carousel.Caption>
+                    <h3>GET IN TOUCH AND BEGIN A CONSULTATION NOW</h3>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item className='carousel-item'>
+                    <div className="d-block w-100 carousel-slide" style={{backgroundImage: `url(${slider_5}`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover',}}>
+                        <div className="container-fluid text-white">
+                            <div className="row justify-content-center">
+                                <div className="col-10 d-flex justify-content-center">
+                                    <h1 className="heading-1 text-center">
                                         Open the door to the automation revolution at Dead Right Controls, where we redefine what's possible.
                                     </h1>
                                 </div>
@@ -88,7 +128,7 @@ export function Home(props) {
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
-            <div className="container text-white py-5">
+            <div className="container text-white py-5 text-shadow">
                 <div className="row justify-content-center">
                     <div className="col-8 d-flex justify-content-center">            
                         <img src={logo} className="logo"></img><br/>

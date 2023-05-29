@@ -1,7 +1,7 @@
 export function About(props) {
     return (
         <>
-            <div className="container text-white">
+            <div className="container text-white text-shadow">
                 <div className="row">
                     <div className="col-md-6">
                         <h2>About DRC</h2>
