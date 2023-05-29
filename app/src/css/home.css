@@ -1,0 +1,21 @@
+.home-carousel {
+
+}
+
+.carousel-item {
+
+}
+
+.carousel-slide {
+    max-height: 75vh;
+    min-height: 65vh;
+    background-color: rgba(0, 0, 0, .30);
+    background-blend-mode: multiply;
+}
+
+.carousel-container {
+    height: 100% !important;
+}
+
+.slider {
+}

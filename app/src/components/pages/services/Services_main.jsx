@@ -1,14 +1,16 @@
 import Services_home from './Services_home';
+import Automation_Consulting from './categories/Automation_Consulting';
 import Commissioning from './categories/Commissioning';
-import Consulting from './categories/Consulting';
+import Panel_BO from './categories/Panel_BO';
 import PlanSpec from './categories/PlanSpec';
+import PCT from './categories/PCT';
 import RetroFit from './categories/RetroFit';
 
-export function Services_main(props) {
+function Services_main(props) {
     return (
         <>
         </>
     )
 }
 
-export { Services_main, Services_home, Commissioning, Consulting, PlanSpec, RetroFit };
+export { Services_main, Services_home, Commissioning, Automation_Consulting, Panel_BO, PlanSpec, PCT, RetroFit };
