@@ -131,7 +131,7 @@ export function Home(props) {
             <div className="container text-white py-5 text-shadow">
                 <div className="row justify-content-center">
                     <div className="col-8 d-flex justify-content-center">            
-                        <img src={logo} className="logo"></img><br/>
+                        <img src={logo} className="logo" alt="logo"></img><br/>
                     </div>
                     <div className="col-10 d-flex justify-content-center">
                         <h1 className="text-center">WHY CHOOSE DEADRIGHT CONTROLS?</h1>
