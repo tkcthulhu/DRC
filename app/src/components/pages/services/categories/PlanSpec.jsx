@@ -21,11 +21,11 @@ function PlanSpec(props) {
                 <div className="row">
                     <div className="col-md-6">
                         <h4>
-                        Material and equipment selection is another area where our Plan Spec team excels. We carefully evaluate and recommend the most suitable options that align with project requirements, considering factors such as efficiency, performance, sustainability, and cost-effectiveness. With their guidance, we ensure that only the best choices are made, guaranteeing long-term success and satisfaction.
-                        <br/>
-                        Code compliance is a top priority for us at Dead Right Controls, and our Plan Spec subcontractors are instrumental in this regard. They possess a deep understanding of local building codes, regulations, and industry standards specific to their area of specialization. With their expertise, we design systems that not only meet all the necessary compliance criteria but also exceed expectations, ensuring the highest levels of safety and quality.
-                        <br/>
-                        Collaboration and communication are the cornerstones of our approach. Our Plan Spec subcontractors work closely with our main contractors, project owners, and other stakeholders, fostering a seamless flow of information and a shared vision. They are always available to address any technical challenges, provide solutions, and ensure that the planning and specification phase progresses smoothly.
+                            Material and equipment selection is another area where our Plan Spec team excels. We carefully evaluate and recommend the most suitable options that align with project requirements, considering factors such as efficiency, performance, sustainability, and cost-effectiveness. With their guidance, we ensure that only the best choices are made, guaranteeing long-term success and satisfaction.
+                            <br/>
+                            Code compliance is a top priority for us at Dead Right Controls, and our Plan Spec subcontractors are instrumental in this regard. They possess a deep understanding of local building codes, regulations, and industry standards specific to their area of specialization. With their expertise, we design systems that not only meet all the necessary compliance criteria but also exceed expectations, ensuring the highest levels of safety and quality.
+                            <br/>
+                            Collaboration and communication are the cornerstones of our approach. Our Plan Spec subcontractors work closely with our main contractors, project owners, and other stakeholders, fostering a seamless flow of information and a shared vision. They are always available to address any technical challenges, provide solutions, and ensure that the planning and specification phase progresses smoothly.
                         </h4>
                     </div>
                     <div className="col-md-6">
