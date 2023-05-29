@@ -17,7 +17,7 @@ export function Header(props) {
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-2">
-                            <img src={logo} className="main-logo"></img>
+                            <img src={logo} className="main-logo" alt="logo"></img>
                         </div>
                         <div className="col-8">
                             <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
@@ -46,32 +46,58 @@ export function Header(props) {
                                             <b>Services</b>
                                         <ul className="dropdown-menu text-small shadow bg-dark">
                                             <li>
-                                                <a 
+                                                <a
                                                     className="dropdown-item text-white" 
                                                     href='/services/planspec'
                                                 >
-                                                    <b>Plan Spec</b></a></li>
-                                            <li><hr className="dropdown-divider"/></li>
-                                            <li>
-                                                <a 
-                                                    className="dropdown-item text-white" 
-                                                    href='/services/consulting'
-                                                >
-                                                    <b>Consulting</b></a></li>
-                                            <li><hr className="dropdown-divider"/></li>
-                                            <li>
-                                                <a 
-                                                    className="dropdown-item text-white" 
-                                                    href='/services/commissioning'
-                                                >
-                                                    <b>Commissioning</b></a></li>
+                                                    <b>Plan Spec</b>
+                                                </a>
+                                            </li>
                                             <li><hr className="dropdown-divider"/></li>
                                             <li>
                                                 <a 
                                                     className="dropdown-item text-white" 
                                                     href='/services/retrofit'
                                                 >
-                                                    <b>Retro Fit</b></a></li>
+                                                    <b>Retro Fit</b>
+                                                </a>
+                                            </li>
+                                            <li><hr className="dropdown-divider"/></li>
+                                            <li>
+                                                <a 
+                                                    className="dropdown-item text-white" 
+                                                    href='/services/panel-build-out'
+                                                >
+                                                    <b>Panel Build Out</b>
+                                                </a>
+                                            </li>
+                                            <li><hr className="dropdown-divider"/></li>
+                                            <li>
+                                                <a 
+                                                    className="dropdown-item text-white" 
+                                                    href='/services/commissioning'
+                                                >
+                                                    <b>Commissioning</b>
+                                                </a>
+                                            </li>
+                                            <li><hr className="dropdown-divider"/></li>
+                                            <li>
+                                                <a 
+                                                    className="dropdown-item text-white" 
+                                                    href='/services/peripheral-control-termination'
+                                                >
+                                                    <b>Peripheral Control Termination</b>
+                                                </a>
+                                            </li>
+                                            <li><hr className="dropdown-divider"/></li>
+                                            <li>
+                                                <a 
+                                                    className="dropdown-item text-white" 
+                                                    href='/services/automation-consulting'
+                                                >
+                                                    <b>Automation Consulting</b>
+                                                </a>
+                                            </li>
                                         </ul>
                                     </div>
                                     </li>
@@ -108,7 +134,7 @@ export function Header(props) {
         </header>
         <nav class="mobile navbar navbar-light bg-dark">
             <div class="container-fluid">
-                <img src={logo} className="mobile-logo"></img>
+                <img src={logo} className="mobile-logo" alt="logo"></img>
                 <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                     <i class="bi bi-list white menu-icon"></i>
                 </button>
@@ -173,9 +199,18 @@ export function Header(props) {
                             <li>
                                 <a 
                                     className="dropdown-item" 
-                                    onClick={() => {navigate('/services/consulting')}}
+                                    onClick={() => {navigate('/services/retrofit')}}
                                 >
-                                    Consulting
+                                    Retro Fit
+                                </a>
+                            </li>
+                            <li><hr className="dropdown-divider"/></li>
+                            <li>
+                                <a 
+                                    className="dropdown-item" 
+                                    onClick={() => {navigate('/services/panel-build-out')}}
+                                >
+                                    Panel Build Out
                                 </a>
                             </li>
                             <li><hr className="dropdown-divider"/></li>
@@ -191,9 +226,18 @@ export function Header(props) {
                             <li>
                                 <a 
                                     className="dropdown-item" 
-                                    onClick={() => {navigate('/services/retrofit')}}
+                                    onClick={() => {navigate('/services/peripheral-control-termination')}}
                                 >
-                                    Retro Fit
+                                    Peripheral Control Termination
+                                </a>
+                            </li>
+                            <li><hr className="dropdown-divider"/></li>
+                            <li>
+                                <a 
+                                    className="dropdown-item" 
+                                    onClick={() => {navigate('/services/automation-consulting')}}
+                                >
+                                    Automation Consulting
                                 </a>
                             </li>
                         </ul>

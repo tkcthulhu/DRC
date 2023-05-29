@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 //Page Imports
 import { Home } from './components/pages/Home';
 import { About } from './components/pages/About';
-import { Services_home, Commissioning, Consulting, PlanSpec, RetroFit } from "./components/pages/services/Services_main"
+import { Services_home, Commissioning, Automation_Consulting, Panel_BO, PCT, PlanSpec, RetroFit } from "./components/pages/services/Services_main"
 import { Blog_home } from "./components/pages/blog/Blog_main";
 import { Gallery_home } from "./components/pages/gallery/Gallery_main";
 import { Contact } from './components/pages/Contact';
@@ -15,19 +15,22 @@ function App() {
     <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
-        <Route path='/services' element={<Services_home/>}>
-          <Route path='commissioning' element={<Commissioning/>}/>
-          <Route path='consulting' element={<Consulting/>}/>
+        <Route path='/services/'>
+          <Route path='' element={<Services_home/>}/>
           <Route path='planspec' element={<PlanSpec/>}/>
           <Route path='retrofit' element={<RetroFit/>}/>
+          <Route path='panel-build-out' element={<Panel_BO/>}/>
+          <Route path='commissioning' element={<Commissioning/>}/>
+          <Route path='peripheral-control-termination' element={<PCT/>}/>
+          <Route path='automation-consulting' element={<Automation_Consulting/>}/>
         </Route>
-        < Route path="/blog" element={<Blog_home/>}>
+        < Route path="/blog/" element={<Blog_home/>}>
           //For sub paths
         </Route>
-        <Route path="/gallery" element={<Gallery_home/>}>
+        <Route path="/gallery/" element={<Gallery_home/>}>
           //For sub paths
         </Route>
-        <Route path='/contact' element={<Contact/>}/>
+        <Route path='/contact/' element={<Contact/>}/>
     </Routes>
   );
 }
