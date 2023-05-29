@@ -1,12 +1,15 @@
 function PlanSpec(props) {
     return (
         <>
-            <div className="container">
+            <div className="container text-white mt-5">
+            <div className="row">
+                    <h1 className="text-center">Plan Spec</h1>
+                </div>
                 <div className="row">
-                    <div className="col-md-6">
+                    <div className="col-lg-6">
                         insert pic here
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-lg-6">
                         <h4>
                             We offer unparalleled expertise in designing and specifying tailor-made solutions to meet your exact automation needs. Our detailed plans and specification documents guide your project to flawless execution, with a keen focus on sustainability and energy efficiency.
                             <br/>
@@ -19,7 +22,7 @@ function PlanSpec(props) {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-md-6">
+                    <div className="col-lg-6">
                         <h4>
                             Material and equipment selection is another area where our Plan Spec team excels. We carefully evaluate and recommend the most suitable options that align with project requirements, considering factors such as efficiency, performance, sustainability, and cost-effectiveness. With their guidance, we ensure that only the best choices are made, guaranteeing long-term success and satisfaction.
                             <br/>
@@ -28,15 +31,15 @@ function PlanSpec(props) {
                             Collaboration and communication are the cornerstones of our approach. Our Plan Spec subcontractors work closely with our main contractors, project owners, and other stakeholders, fostering a seamless flow of information and a shared vision. They are always available to address any technical challenges, provide solutions, and ensure that the planning and specification phase progresses smoothly.
                         </h4>
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-lg-6">
                         insert pic here 
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-md-6">
+                    <div className="col-lg-6">
                         insert pic here
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-lg-6">
                         <h4>
                             At Dead Right Controls, we recognize the critical role our Plan Spec subcontractors play in delivering excellence. Their specialized expertise, attention to detail, and commitment to upholding our high standards set us apart from the competition. With their guidance, we optimize efficiency, streamline workflows, and enhance the overall user experience, tailored precisely to the unique requirements of each project.
                             <br/>
