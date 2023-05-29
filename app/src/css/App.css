@@ -43,3 +43,36 @@ body {
   height: 100vw;
   width: auto;
 }
+
+.logo {
+  height:auto;
+  width: 15vw;
+}
+
+h1, .heading-1 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+@media (min-width: 1200px) {
+  h1, .heading-1 {
+    font-size: 110px;
+  }
+}
+
+@media (min-width: 992px) {
+  h1, .heading-1 {
+    font-size: 90px;
+  }
+}
+
+@media (min-width: 768px) {
+  h1, .heading-1 {
+    font-size: 70px;
+  }
+}
+.text-shadow {
+  text-shadow: -1px 1px 0 #000,
+  1px 1px 0 #000,
+ 1px -1px 0 #000;
+}

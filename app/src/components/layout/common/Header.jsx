@@ -1,6 +1,8 @@
 import { useNavigate } from "react-router-dom";
 
 import logo from  "../../../images/DRC-Art-128x128.png";
+import header_bg from "../../../images/banner-LG.png";
+
 import '../../../css/header.css';
 import '../../../css/effects.css';
 
@@ -11,7 +13,7 @@ export function Header(props) {
     return(
         <>
         <header className="desktop">
-            <div className="px-3 py-2 bg-dark text-white">
+            <div className="px-3 py-2 bg-dark text-white" style={{backgroundImage: `url(${header_bg})`, backgroundSize: 'cover'}}>
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-2">
@@ -22,7 +24,7 @@ export function Header(props) {
                                 <ul className="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
                                     <li>
                                         <div 
-                                        className="text-white nav-button type1 bg-dark" 
+                                        className="text-white nav-button type1" 
                                         onClick={() => {navigate('/')}}
                                         >
                                             <b>Home</b>
@@ -30,7 +32,7 @@ export function Header(props) {
                                     </li>
                                     <li>
                                     <div 
-                                        className="text-white nav-button type1 bg-dark" 
+                                        className="text-white nav-button type1" 
                                         onClick={() => {navigate('/about')}}
                                         >
                                             <b>About</b>
@@ -38,7 +40,7 @@ export function Header(props) {
                                     </li>
                                     <li>
                                     <div 
-                                        className="text-white nav-button type1 flex-shrink-0 dropdown dropdown-toggle bg-dark"
+                                        className="text-white nav-button type1 flex-shrink-0 dropdown dropdown-toggle"
                                         onClick={() => {navigate('/services')}}
                                     >
                                             <b>Services</b>
@@ -75,7 +77,7 @@ export function Header(props) {
                                     </li>
                                     <li>
                                     <div 
-                                        className="text-white nav-button type1 bg-dark" 
+                                        className="text-white nav-button type1" 
                                         onClick={() => {navigate('/blog')}}
                                         >
                                             <b>Blog</b>
@@ -83,7 +85,7 @@ export function Header(props) {
                                     </li>
                                     <li>
                                     <div 
-                                        className="text-white nav-button type1 bg-dark" 
+                                        className="text-white nav-button type1" 
                                         onClick={() => {navigate('/gallery')}}
                                         >
                                             <b>Gallery</b>
@@ -91,7 +93,7 @@ export function Header(props) {
                                     </li>
                                     <li>
                                     <div 
-                                        className="text-white nav-button type1 bg-dark" 
+                                        className="text-white nav-button type1" 
                                         onClick={() => {navigate('/contact')}}
                                         >
                                             <b>Contact</b>
