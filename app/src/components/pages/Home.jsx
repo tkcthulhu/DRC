@@ -19,6 +19,39 @@ export function Home(props) {
         setIndex(selectedIndex);
     };
 
+    let statements = [
+        {header: 'EXPERTISE', statement: 'With years of industry experience, our team of skilled professionals possesses the knowledge and expertise needed to design, install, and maintain robust automation solutions.', icon: <i class="bi bi-tools"></i>},
+        {header: "INNOVATION", statement: "We stay at the forefront of technological advancements to bring you the latest automation tools and techniques, delivering innovative solutions that drive your success.", icon: <i class="bi bi-lightbulb"></i>},
+        {header: "CUSTOMIZATION", statement: "We understand that every business is unique. That's why we take a personalized approach, tailoring our solutions to meet your specific needs, objectives, and budget.", icon: <i class="bi bi-boxes"></i>},
+        {header: "RELIABILITY", statement: "We pride ourselves on the reliability of our products and services. Our commitment to quality craftsmanship ensures that you receive durable and efficient control systems that stand the test of time.", icon: <i class="bi bi-bricks"></i>},
+        {header: "PARTNERSHIP", statement: "We believe in building strong, long-term partnerships with our clients. From the initial consultation to ongoing support, we are dedicated to your success every step of the way.", icon: <i class="bi bi-graph-up-arrow"></i>}
+    ]
+
+    let cards = [];
+
+    for(const card of statements) {
+
+        cards.push(
+            <div className="col-md-6">
+                <div class="card text-white dark-bg-card mb-3 zoom" >
+                    <div class="card-header">
+                        <h1 className="text-center">
+                            {card.icon}
+                        </h1>
+                        <h2 className="text-center">
+                            {card.header}: 
+                        </h2>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-text">
+                            {card.statement}
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        )
+    }
+
     return (
         <>
             <Carousel activeIndex={index} onSelect={handleSelect} className="home-carousel">
@@ -27,8 +60,8 @@ export function Home(props) {
                         <div className="container-fluid text-white">
                             <div className="row justify-content-center">
                                 <div className="col-10 d-flex justify-content-center">
-                                    <h1 className="heading-1 text-center">
-                                        Welcome to Dead Right Controls, your gateway to the forefront of automation innovation.
+                                    <h1 className="heading-1 text-center" id="slider-text-1">
+                                        Welcome to Dead Right Controls: Your gateway to the forefront of automation.  
                                     </h1>
                                 </div>
                             </div>
@@ -45,17 +78,19 @@ export function Home(props) {
                 </Carousel.Item>
                 <Carousel.Item className='carousel-item'>
                     <div className="d-block w-100 carousel-slide" style={{backgroundImage: `url(${slider_2}`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover',}}>
-                        <div className="container-fluid text-white">
+                        <div className="container-fluid text-white align-items-center" height="100%">
                             <div className="row justify-content-center">
                                 <div className="col-10 d-flex justify-content-center">
                                     <h1 className="heading-1 text-center">
-                                        Step inside and witness the transformative power of cutting-edge automation solutions that propel your operations to new heights.
+                                        Step inside and witness the transformative power of cutting-edge
                                     </h1>
                                 </div>
                             </div>
                             <div className="row justify-content-center">
-                                <div className="col">
-
+                                <div className="col-10 d-flex justify-content-center">
+                                    <h1 className="heading-1 text-center">
+                                        automation solutions that propel your operations to new heights.
+                                    </h1>
                                 </div>
                             </div>
                         </div>
@@ -136,32 +171,8 @@ export function Home(props) {
                     <div className="col-10 d-flex justify-content-center">
                         <h1 className="text-center">WHY CHOOSE DEADRIGHT CONTROLS?</h1>
                     </div>
-                    <div className="col-10 d-flex justify-content-center">
-                        <h2>EXPERTISE:</h2>
-                    </div>                
-                    <br/><br/> 
-                    <h3 className="text-center">With years of industry experience, our team of skilled professionals possesses the knowledge and expertise needed to design, install, and maintain robust automation solutions.</h3>
-                    <br/><br/>
-                    <div className="col-10 d-flex justify-content-center">
-                        <h2>INNOVATION:</h2>
-                    </div>
-                    <br/><br/> 
-                    <h3 className="text-center">We stay at the forefront of technological advancements to bring you the latest automation tools and techniques, delivering innovative solutions that drive your success.</h3>
-                    <br/><br/>
-                    <div className="col-10 d-flex justify-content-center">
-                        <h2>CUSTOMIZATION:</h2>
-                    </div>
-                    <br/><br/> 
-                    <h3 className="text-center">We understand that every business is unique. That's why we take a personalized approach, tailoring our solutions to meet your specific needs, objectives, and budget.</h3>
-                    <br/><br/>
-                    <div className="col-10 d-flex justify-content-center">
-                        <h2>RELIABILITY:</h2>
-                    </div>
-                    <br/><br/> 
-                    <h3 className="text-center">We pride ourselves on the reliability of our products and services. Our commitment to quality craftsmanship ensures that you receive durable and efficient control systems that stand the test of time.</h3>
-                    <br/><br/>
-                    <div className="col-10 d-flex justify-content-center">
-                        <h2>PARTNERSHIP:</h2>
+                    <div className="row justify-content-center">
+                        {cards}
                     </div>
                     <br/><br/> 
                     <h3 className="text-center">We believe in building strong, long-term partnerships with our clients. From the initial consultation to ongoing support, we are dedicated to your success every step of the way.</h3>

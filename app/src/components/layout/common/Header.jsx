@@ -1,7 +1,8 @@
 import { useNavigate } from "react-router-dom";
 
 import logo from  "../../../images/DRC-Art-128x128.png";
-import header_bg from "../../../images/banner-LG.png";
+import drc_banner from "../../../images/drc-banner.jpg";
+import drc_mobile_banner from "../../../images/drc-mobile-menu-bg.jpg"
 
 import '../../../css/header.css';
 import '../../../css/effects.css';
@@ -13,7 +14,7 @@ export function Header(props) {
     return(
         <>
         <header className="desktop">
-            <div className="px-3 py-2 bg-dark text-white" style={{backgroundImage: `url(${header_bg})`, backgroundSize: 'cover'}}>
+            <div className="px-3 py-2 bg-dark text-white" style={{backgroundImage: `url(${drc_banner})`, backgroundSize: 'cover'}}>
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-2">
@@ -41,10 +42,10 @@ export function Header(props) {
                                     <li>
                                     <div 
                                         className="text-white nav-button type1 flex-shrink-0 dropdown dropdown-toggle"
-                                        onClick={() => {navigate('/services')}}
+                                        // onClick={() => {navigate('/services')}}
                                     >
                                             <b>Services</b>
-                                        <ul className="dropdown-menu text-small shadow bg-dark">
+                                        <ul className="dropdown-menu text-small bg-dark">
                                             <li>
                                                 <a
                                                     className="dropdown-item text-white" 
@@ -101,7 +102,7 @@ export function Header(props) {
                                         </ul>
                                     </div>
                                     </li>
-                                    <li>
+                                    {/* <li>
                                     <div 
                                         className="text-white nav-button type1" 
                                         onClick={() => {navigate('/blog')}}
@@ -116,7 +117,7 @@ export function Header(props) {
                                         >
                                             <b>Gallery</b>
                                         </div>
-                                    </li>
+                                    </li> */}
                                     <li>
                                     <div 
                                         className="text-white nav-button type1" 
@@ -132,7 +133,7 @@ export function Header(props) {
                 </div>
             </div>
         </header>
-        <nav class="mobile navbar navbar-light bg-dark">
+        <nav class="mobile navbar navbar-light bg-dark" style={{backgroundImage: `url(${drc_banner})`, backgroundSize: 'cover'}}>
             <div class="container-fluid">
                 <img src={logo} className="mobile-logo" alt="logo"></img>
                 <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
@@ -141,7 +142,7 @@ export function Header(props) {
             </div>
         </nav>
         <div className="mobile offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style={{width: 'fit-content'}}>
-            <div className="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style={{width: 280 + 'px', height: 100 + 'vh'}}>
+            <div className="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style={{width: 280 + 'px', height: 100 + 'vh', backgroundImage: `url(${drc_mobile_banner})`, backgroundSize: 'cover'}}>
                 <a 
                     className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
                     onClick={() => {navigate('/')}}
@@ -178,14 +179,14 @@ export function Header(props) {
                             Services
                         </a>
                         <ul className="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
-                            <li>
+                            {/* <li>
                                 <a 
                                     className="dropdown-item" 
                                     onClick={() => {navigate('/services')}}
                                 >
                                     All Services
                                 </a>
-                            </li>
+                            </li> */}
                             <li><hr className="dropdown-divider"/></li>
                             <li>
                                 <a 
@@ -243,7 +244,7 @@ export function Header(props) {
                         </ul>
                     </div>
                 </li>
-                <li>
+                {/* <li>
                     <a  
                         className="nav-link text-white"
                         onClick={() => {navigate('/blog')}}
@@ -258,7 +259,7 @@ export function Header(props) {
                     >
                     Gallery
                     </a>
-                </li>
+                </li> */}
                 <li>
                     <a  
                         className="nav-link text-white"
