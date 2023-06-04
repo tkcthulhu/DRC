@@ -1,3 +1,6 @@
+import industrial_2 from '../../../../images/page_images/industrial-2.jpg';
+import box_4 from '../../../../images/page_images/box-4.JPG';
+
 function Automation_Consulting(props) {
     return (
         <>
@@ -7,7 +10,7 @@ function Automation_Consulting(props) {
                 </div>
                 <div className="row">
                     <div className="col-lg-6">
-                        insert pic here
+                        <img src={industrial_2} className="img-fluid" />
                     </div>
                     <div className="col-lg-6">
                         <h4>
@@ -26,7 +29,7 @@ function Automation_Consulting(props) {
                         </h4>
                     </div>
                     <div className="col-lg-6">
-                        insert pic here
+                        <img src={box_4} className="img-fluid" />
                     </div>
                 </div>
             </div>

@@ -1,3 +1,7 @@
+import box_1 from '../../../../images/page_images/box-1.jpg';
+import box_4 from '../../../../images/page_images/box-4.JPG'; 
+import box_6 from '../../../../images/page_images/box-6.jpg';
+
 function Panel_BO(props) {
     return (
         <>
@@ -7,7 +11,7 @@ function Panel_BO(props) {
                 </div>
                 <div className="row">
                     <div className="col-lg-6">
-                        insert pic here
+                        <img src={box_4} className="img-fluid" />
                     </div>
                     <div className="col-lg-6">
                         <h4>
@@ -28,12 +32,12 @@ function Panel_BO(props) {
                         </h4>
                     </div>
                     <div className="col-lg-6">
-                        insert pic here
+                        <img src={box_1} className="img-fluid" />
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-lg-6">
-                        insert pic here
+                        <img src={box_6} className="img-fluid" />
                     </div>
                     <div className="col-lg-6">
                         <h4>

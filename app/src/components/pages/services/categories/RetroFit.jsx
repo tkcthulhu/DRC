@@ -1,3 +1,7 @@
+import tool from '../../../../images/page_images/closeup-tool.jpg';
+import box_2 from '../../../../images/page_images/box-2.jpg';
+import industrial_2 from '../../../../images/page_images/industrial-2.jpg';
+
 function RetroFit(props) {
     return (
         <> 
@@ -7,7 +11,7 @@ function RetroFit(props) {
                 </div>
                 <div className="row">
                     <div className="col-lg-6">
-                        insert pic here
+                        <img src={industrial_2} className="img-fluid" />
                     </div>
                     <div className="col-lg-6">
                         <h4>
@@ -28,12 +32,12 @@ function RetroFit(props) {
                         </h4>
                     </div>
                     <div className="col-lg-6">
-                        insert pic here
+                        <img src={box_2} className="img-fluid" />
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-lg-6">
-                        insert pic here
+                        <img src={tool} className="img-fluid" />
                     </div>
                     <div className="col-lg-6">
                         <h4>
