@@ -1,3 +1,7 @@
+import box_1 from '../../../../images/page_images/box-1.jpg'
+import box_4 from '../../../../images/page_images/box-4.JPG'
+import industrial_1 from '../../../../images/page_images/industrial-1.jpg'
+
 function PlanSpec(props) {
     return (
         <>
@@ -7,7 +11,7 @@ function PlanSpec(props) {
                 </div>
                 <div className="row">
                     <div className="col-lg-6">
-                        insert pic here
+                        <img className="img-fluid" src={industrial_1}/>
                     </div>
                     <div className="col-lg-6">
                         <h4>
@@ -32,12 +36,12 @@ function PlanSpec(props) {
                         </h4>
                     </div>
                     <div className="col-lg-6">
-                        insert pic here 
+                        <img className="img-fluid" src={box_4}/>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-lg-6">
-                        insert pic here
+                        <img className="img-fluid" src={box_1}/>
                     </div>
                     <div className="col-lg-6">
                         <h4>
