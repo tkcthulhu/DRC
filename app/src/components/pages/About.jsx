@@ -1,7 +1,11 @@
+import controller_pic from '../../images/controller-pic.jpeg';
+import wire_pic from '../../images/wire-pic.jpeg';
+
 export function About(props) {
     return (
         <>
-            <div className="container text-white text-shadow">
+
+            <div className="container text-white">
                 <div className="row">
                     <div className="col-md-6">
                         <h2>About DRC</h2>
@@ -16,11 +20,13 @@ export function About(props) {
                             and elevate your overall experience.
                         </h4>
                     </div>
-                    <div className="col-md-6"></div>
+                    <div className="col-md-6 d-flex align-items-center">
+                        <img src={controller_pic}/>
+                    </div>
                 </div>
                 <div className="row">
-                    <div className="col-md-6">
-
+                    <div className="col-md-6 d-flex align-items-center">
+                        <img src={wire_pic}/>
                     </div>
                     <div className="col-md-6">
                         <h2>Our Mission</h2>
@@ -32,13 +38,8 @@ export function About(props) {
                         </h4>
                     </div>
                 </div>
-                <div className="row">
-                    <div className="col-md-6">
-
-                    </div>
-                    <div className="col-md-6"></div>
-                </div>
             </div>
+
         </>
     )
 }

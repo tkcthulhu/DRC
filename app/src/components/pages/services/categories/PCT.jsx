@@ -1,13 +1,16 @@
+import box_3 from '../../../../images/page_images/box-3.jpg'
+import box_5 from '../../../../images/page_images/box-5.JPG'
+
 function PCT(props) {
     return (
-        <>
+        <> 
             <div className="container text-white mt-5">
             <div className="row">
                     <h1 className="text-center">Peripheral Control Termination</h1>
                 </div>
                 <div className="row">
                     <div className="col-lg-6">
-                        insert pic here
+                        <img src={box_3} className="img-fluid" />
                     </div>
                     <div className="col-lg-6">
                         <h4>
@@ -26,7 +29,7 @@ function PCT(props) {
                         </h4>
                     </div>
                     <div className="col-lg-6">
-                        insert pic here
+                        <img src={box_5} className="img-fluid" />
                     </div>
                 </div>
             </div>
