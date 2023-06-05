@@ -1,3 +1,7 @@
+import industrial_1 from '../../../../images/page_images/industrial-1.jpg'
+import industrial_2 from '../../../../images/page_images/industrial-2.jpg'
+import industrial_3 from '../../../../images/page_images/industrial-3.JPG'
+
 function Commissioning(props) {
     return (
         <>
@@ -7,7 +11,7 @@ function Commissioning(props) {
                 </div>
                 <div className="row">
                     <div className="col-lg-6">
-                        insert pic here
+                        <img src={industrial_1} className="img-fluid" />
                     </div>
                     <div className="col-lg-6">
                         <h4>
@@ -26,12 +30,12 @@ function Commissioning(props) {
                         </h4>
                     </div>
                     <div className="col-lg-6">
-                        insert pic here
+                        <img src={industrial_2} className="img-fluid" />
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-lg-6">
-                        insert pic here
+                        <img src={industrial_3} className="img-fluid" />
                     </div>
                     <div className="col-lg-6">
                         <h4>

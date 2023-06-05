@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-import logo from  "../../../images/DRC-Art-128x128.png";
+import logo from  "../../../images/DRC-Logo.png";
 import drc_banner from "../../../images/drc-banner.jpg";
 import drc_mobile_banner from "../../../images/drc-mobile-menu-bg.jpg"
 
@@ -18,7 +18,7 @@ export function Header(props) {
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-2">
-                            <img src={logo} className="main-logo" alt="logo"></img>
+                            <img onClick={() => {navigate('/')}} src={logo} className="main-logo" alt="logo"></img>
                         </div>
                         <div className="col-8">
                             <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
@@ -42,7 +42,6 @@ export function Header(props) {
                                     <li>
                                     <div 
                                         className="text-white nav-button type1 flex-shrink-0 dropdown dropdown-toggle"
-                                        // onClick={() => {navigate('/services')}}
                                     >
                                             <b>Services</b>
                                         <ul className="dropdown-menu text-small bg-dark">
@@ -147,7 +146,7 @@ export function Header(props) {
                     className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
                     onClick={() => {navigate('/')}}
                 >
-                    <img src={logo} className="main-logo"></img>
+                    <img onClick={() => {navigate('/')}} src={logo} className="main-logo"></img>
                 </a>
                 <hr/>
                 <ul className="nav nav-pills flex-column mb-auto">

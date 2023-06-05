@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Carousel from 'react-bootstrap/Carousel';
 
 import '../../css/home.css';
@@ -9,7 +10,7 @@ import slider_3 from '../../images/Slide_3.jpeg';
 import slider_4 from '../../images/Slide_4.jpeg';
 import slider_5 from '../../images/Slide_5.jpeg';
 
-import logo from '../../images/DRC-Art-128x128.png';
+import logo from '../../images/DRC-Logo.png';
 
 export function Home(props) {
 
@@ -18,6 +19,8 @@ export function Home(props) {
     const handleSelect = (selectedIndex, e) => {
         setIndex(selectedIndex);
     };
+
+    const navigate = useNavigate();
 
     let statements = [
         {header: 'EXPERTISE', statement: 'With years of industry experience, our team of skilled professionals possesses the knowledge and expertise needed to design, install, and maintain robust automation solutions.', icon: <i class="bi bi-tools"></i>},
@@ -73,7 +76,7 @@ export function Home(props) {
                         </div>
                     </div>
                     <Carousel.Caption>
-                    <h3>SEE WHAT DRC CAN DO FOR YOU</h3>
+                    <h3 role="button" onClick={() => {navigate('/services/planspec')}}>SEE WHAT DRC CAN DO FOR YOU</h3>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className='carousel-item'>
@@ -96,7 +99,7 @@ export function Home(props) {
                         </div>
                     </div>
                     <Carousel.Caption>
-                    <h3>SEE WHAT DRC CAN DO FOR YOU</h3>
+                    <h3 role="button" onClick={() => {navigate('/services/automation-consulting')}}>SEE WHAT DRC CAN DO FOR YOU</h3>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className='carousel-item'>
@@ -117,7 +120,7 @@ export function Home(props) {
                         </div>
                     </div>
                     <Carousel.Caption>
-                    <h3>LEARN ABOUT DEAD RIGHT CONTROLS</h3>
+                    <h3 role="button" onClick={() => {navigate('/about')}}>LEARN ABOUT DEAD RIGHT CONTROLS</h3>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className='carousel-item'>
@@ -138,7 +141,7 @@ export function Home(props) {
                         </div>
                     </div>
                     <Carousel.Caption>
-                    <h3>GET IN TOUCH AND BEGIN A CONSULTATION NOW</h3>
+                    <h3 role="button" onClick={() => {navigate('/contact')}}>GET IN TOUCH AND BEGIN A CONSULTATION NOW</h3>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className='carousel-item'>
@@ -159,7 +162,7 @@ export function Home(props) {
                         </div>
                     </div>
                     <Carousel.Caption>
-                    <h3>GET IN TOUCH AND BEGIN A CONSULTATION NOW</h3>
+                    <h3 role="button" onClick={() => {navigate('/contact')}}>GET IN TOUCH AND BEGIN A CONSULTATION NOW</h3>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
