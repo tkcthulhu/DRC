@@ -55,7 +55,7 @@ body {
 }
 
 .bg-dark-2 {
-  background-color: #282c34;
+  background-color: #191b1e;
 }
 
 .logo {
@@ -96,7 +96,7 @@ h1, .heading-1 {
 }
 
 .dark-bg-card {
-  background-color:rgba(0,0,0,0.3);
+  background-color:rgba(0,0,0,0.5);
 }
 
 .zoom {
@@ -105,4 +105,9 @@ h1, .heading-1 {
 
 .zoom:hover {
   transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.img-fluid {
+  height: 100% !important;
+  width: auto !important;
 }

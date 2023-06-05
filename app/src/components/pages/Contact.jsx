@@ -6,12 +6,12 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
 export function Contact(props) {
-formDataEmail
+
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
 
-  const form = useRef();
-  const [errors, setErrors] = useState({});
+    const form = useRef();
+    const [errors, setErrors] = useState({});
 
   const sendEmail = (e) => {
     e.preventDefault();

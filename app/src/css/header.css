@@ -24,3 +24,7 @@ b {
     font-weight: 700;
     font-size: x-large;
 }
+
+.text-gold {
+    color: goldenrod
+}

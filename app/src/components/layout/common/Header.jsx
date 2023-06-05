@@ -14,7 +14,7 @@ export function Header(props) {
     return(
         <>
         <header className="desktop">
-            <div className="px-3 py-2 bg-dark text-white" style={{backgroundImage: `url(${drc_banner})`, backgroundSize: 'cover'}}>
+            <div className="px-3 py-2 bg-dark" style={{backgroundImage: `url(${drc_banner})`, backgroundSize: 'cover'}}>
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-2">
@@ -25,7 +25,7 @@ export function Header(props) {
                                 <ul className="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
                                     <li>
                                         <div 
-                                        className="text-white nav-button type1" 
+                                        className="nav-button type1" 
                                         onClick={() => {navigate('/')}}
                                         >
                                             <b>Home</b>
@@ -33,7 +33,7 @@ export function Header(props) {
                                     </li>
                                     <li>
                                     <div 
-                                        className="text-white nav-button type1" 
+                                        className="nav-button type1" 
                                         onClick={() => {navigate('/about')}}
                                         >
                                             <b>About</b>
@@ -41,7 +41,7 @@ export function Header(props) {
                                     </li>
                                     <li>
                                     <div 
-                                        className="text-white nav-button type1 flex-shrink-0 dropdown dropdown-toggle"
+                                        className="nav-button type1 flex-shrink-0 dropdown dropdown-toggle"
                                     >
                                             <b>Services</b>
                                         <ul className="dropdown-menu text-small bg-dark">
@@ -103,7 +103,7 @@ export function Header(props) {
                                     </li>
                                     {/* <li>
                                     <div 
-                                        className="text-white nav-button type1" 
+                                        className="nav-button type1" 
                                         onClick={() => {navigate('/blog')}}
                                         >
                                             <b>Blog</b>
@@ -111,7 +111,7 @@ export function Header(props) {
                                     </li>
                                     <li>
                                     <div 
-                                        className="text-white nav-button type1" 
+                                        className="nav-button type1" 
                                         onClick={() => {navigate('/gallery')}}
                                         >
                                             <b>Gallery</b>
@@ -119,7 +119,7 @@ export function Header(props) {
                                     </li> */}
                                     <li>
                                     <div 
-                                        className="text-white nav-button type1" 
+                                        className="nav-button type1" 
                                         onClick={() => {navigate('/contact')}}
                                         >
                                             <b>Contact</b>
@@ -132,11 +132,11 @@ export function Header(props) {
                 </div>
             </div>
         </header>
-        <nav class="mobile navbar navbar-light bg-dark" style={{backgroundImage: `url(${drc_banner})`, backgroundSize: 'cover'}}>
-            <div class="container-fluid">
+        <nav className="mobile navbar navbar-light bg-dark" style={{backgroundImage: `url(${drc_banner})`, backgroundSize: 'cover'}}>
+            <div className="container-fluid">
                 <img src={logo} className="mobile-logo" alt="logo"></img>
-                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                    <i class="bi bi-list white menu-icon"></i>
+                <button className="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <i className="bi bi-list white menu-icon"></i>
                 </button>
             </div>
         </nav>
@@ -185,8 +185,8 @@ export function Header(props) {
                                 >
                                     All Services
                                 </a>
-                            </li> */}
-                            <li><hr className="dropdown-divider"/></li>
+                            </li> 
+                            <li><hr className="dropdown-divider"/></li>*/}
                             <li>
                                 <a 
                                     className="dropdown-item" 
