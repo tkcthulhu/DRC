@@ -18,7 +18,7 @@ export function Header(props) {
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-2">
-                            <img onClick={() => {navigate('/')}} src={logo} className="main-logo" alt="logo"></img>
+                            <img onClick={() => {navigate('/')}} src={logo} className="main-logo" alt="logo" role="button"></img>
                         </div>
                         <div className="col-8">
                             <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
@@ -48,7 +48,8 @@ export function Header(props) {
                                             <li>
                                                 <a
                                                     className="dropdown-item text-white" 
-                                                    href='/services/planspec'
+                                                    href='#/services/planspec'
+                                                    // onClick={() => {navigate('/services/planspec')}}
                                                 >
                                                     <b>Plan Spec</b>
                                                 </a>
@@ -57,7 +58,7 @@ export function Header(props) {
                                             <li>
                                                 <a 
                                                     className="dropdown-item text-white" 
-                                                    href='/services/retrofit'
+                                                    href='#/services/retrofit'
                                                 >
                                                     <b>Retro Fit</b>
                                                 </a>
@@ -66,7 +67,7 @@ export function Header(props) {
                                             <li>
                                                 <a 
                                                     className="dropdown-item text-white" 
-                                                    href='/services/panel-build-out'
+                                                    href='#/services/panel-build-out'
                                                 >
                                                     <b>Panel Build Out</b>
                                                 </a>
@@ -75,7 +76,7 @@ export function Header(props) {
                                             <li>
                                                 <a 
                                                     className="dropdown-item text-white" 
-                                                    href='/services/commissioning'
+                                                    href='#/services/commissioning'
                                                 >
                                                     <b>Commissioning</b>
                                                 </a>
@@ -84,7 +85,7 @@ export function Header(props) {
                                             <li>
                                                 <a 
                                                     className="dropdown-item text-white" 
-                                                    href='/services/peripheral-control-termination'
+                                                    href='#/services/peripheral-control-termination'
                                                 >
                                                     <b>Peripheral Control Termination</b>
                                                 </a>
@@ -93,7 +94,7 @@ export function Header(props) {
                                             <li>
                                                 <a 
                                                     className="dropdown-item text-white" 
-                                                    href='/services/automation-consulting'
+                                                    href='#/services/automation-consulting'
                                                 >
                                                     <b>Automation Consulting</b>
                                                 </a>
