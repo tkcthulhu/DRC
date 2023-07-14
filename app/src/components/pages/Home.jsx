@@ -26,7 +26,7 @@ export function Home(props) {
         {header: 'EXPERTISE', statement: 'With years of industry experience, our team of skilled professionals possesses the knowledge and expertise needed to design, install, and maintain robust automation solutions.', icon: <i className="bi bi-tools"></i>},
         {header: "INNOVATION", statement: "We stay at the forefront of technological advancements to bring you the latest automation tools and techniques, delivering innovative solutions that drive your success.", icon: <i className="bi bi-lightbulb"></i>},
         {header: "CUSTOMIZATION", statement: "We understand that every business is unique. That's why we take a personalized approach, tailoring our solutions to meet your specific needs, objectives, and budget.", icon: <i className="bi bi-boxes"></i>},
-        {header: "RELIABILITY", statement: "We pride ourselves on the reliability of our products and services. Our commitment to quality craftsmanship ensures that you receive durable and efficient control systems that stand the test of time.", icon: <i className="bi bi-bricks"></i>},
+        {header: "RELIABILITY", statement: "We pride ourselves on the reliability of our products and services. Our commitment to quality craftsmanship ensures that you receive durable and efficient automation solutions that stand the test of time.", icon: <i className="bi bi-bricks"></i>},
         {header: "PARTNERSHIP", statement: "We believe in building strong, long-term partnerships with our clients. From the initial consultation to ongoing support, we are dedicated to your success every step of the way.", icon: <i className="bi bi-graph-up-arrow"></i>}
     ]
 
