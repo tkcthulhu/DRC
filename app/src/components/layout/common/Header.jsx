@@ -135,7 +135,7 @@ export function Header(props) {
         </header>
         <nav className="mobile navbar navbar-light bg-dark" style={{backgroundImage: `url(${drc_banner})`, backgroundSize: 'cover'}}>
             <div className="container-fluid">
-                <img src={logo} className="mobile-logo" alt="logo"></img>
+                <img src={logo} className="mobile-logo" alt="logo" role="button" onClick={() => {navigate('/')}}></img>
                 <button className="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                     <i className="bi bi-list white menu-icon"></i>
                 </button>
@@ -156,6 +156,7 @@ export function Header(props) {
                         className="nav-link active" 
                         onClick={() => {navigate('/')}}
                         aria-current="page"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"
                     >
                     Home
                     </a>
@@ -164,6 +165,7 @@ export function Header(props) {
                     <a 
                         className="nav-link text-white"
                         onClick={() => {navigate('/about')}}
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"
                     >
                     About
                     </a>
@@ -192,6 +194,7 @@ export function Header(props) {
                                 <a 
                                     className="dropdown-item" 
                                     onClick={() => {navigate('/services/planspec')}}
+                                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"
                                 >
                                     Plan Spec
                                 </a>
@@ -201,6 +204,7 @@ export function Header(props) {
                                 <a 
                                     className="dropdown-item" 
                                     onClick={() => {navigate('/services/retrofit')}}
+                                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"
                                 >
                                     Retro Fit
                                 </a>
@@ -210,6 +214,7 @@ export function Header(props) {
                                 <a 
                                     className="dropdown-item" 
                                     onClick={() => {navigate('/services/panel-build-out')}}
+                                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"
                                 >
                                     Panel Build Out
                                 </a>
@@ -219,6 +224,7 @@ export function Header(props) {
                                 <a 
                                     className="dropdown-item" 
                                     onClick={() => {navigate('/services/commissioning')}}
+                                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"
                                 >
                                     Commissioning
                                 </a>
@@ -228,6 +234,7 @@ export function Header(props) {
                                 <a 
                                     className="dropdown-item" 
                                     onClick={() => {navigate('/services/peripheral-control-termination')}}
+                                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"
                                 >
                                     Peripheral Control Termination
                                 </a>
@@ -237,6 +244,7 @@ export function Header(props) {
                                 <a 
                                     className="dropdown-item" 
                                     onClick={() => {navigate('/services/automation-consulting')}}
+                                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"
                                 >
                                     Automation Consulting
                                 </a>
@@ -264,6 +272,7 @@ export function Header(props) {
                     <a  
                         className="nav-link text-white"
                         onClick={() => {navigate('/contact')}}
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"
                     >
                     Contact
                     </a>
