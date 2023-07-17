@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e9fc12d0.css",
-    "main.js": "/static/js/main.8cec39f8.js",
+    "main.css": "/static/css/main.0229865a.css",
+    "main.js": "/static/js/main.9de0f614.js",
     "static/js/787.c1112931.chunk.js": "/static/js/787.c1112931.chunk.js",
     "static/media/industrial-1.jpg": "/static/media/industrial-1.7dd1d3dfbb61252ef658.jpg",
     "static/media/box-1.jpg": "/static/media/box-1.5f2dd3ee5514e018655b.jpg",
@@ -15,23 +15,22 @@
     "static/media/box-3.jpg": "/static/media/box-3.486bb57b1fdb1f1e3cb3.jpg",
     "static/media/drc-mobile-bg.jpg": "/static/media/drc-mobile-bg.367c1a10b0ca01da5028.jpg",
     "static/media/closeup-tool.jpg": "/static/media/closeup-tool.c6b57bfd57411dd502c3.jpg",
+    "static/media/skyline.jpeg": "/static/media/skyline.83bde8baa326a2ac31c3.jpeg",
     "static/media/drc-mobile-menu-bg.jpg": "/static/media/drc-mobile-menu-bg.dfe6b1cb62fc49eff345.jpg",
     "static/media/drc-main-bg.jpg": "/static/media/drc-main-bg.48171e542252f81dbb88.jpg",
     "static/media/drc-banner.jpg": "/static/media/drc-banner.5bcc9a3f46a0e385b2b1.jpg",
     "static/media/Slide_2.jpeg": "/static/media/Slide_2.114cb75a2221cb3aabeb.jpeg",
-    "static/media/controller-pic.jpeg": "/static/media/controller-pic.ad1e12482b839660fe3a.jpeg",
     "static/media/Slide_1.jpeg": "/static/media/Slide_1.243d07561576a054cd20.jpeg",
     "static/media/Slide_3.jpeg": "/static/media/Slide_3.9b43d87b45a9b5bfc80b.jpeg",
     "static/media/Slide_5.jpeg": "/static/media/Slide_5.787108668be6c2a04f03.jpeg",
     "static/media/Slide_4.jpeg": "/static/media/Slide_4.26187180fa1c723bcdec.jpeg",
-    "static/media/wire-pic.jpeg": "/static/media/wire-pic.eff952337778e8d9d765.jpeg",
     "index.html": "/index.html",
-    "main.e9fc12d0.css.map": "/static/css/main.e9fc12d0.css.map",
-    "main.8cec39f8.js.map": "/static/js/main.8cec39f8.js.map",
+    "main.0229865a.css.map": "/static/css/main.0229865a.css.map",
+    "main.9de0f614.js.map": "/static/js/main.9de0f614.js.map",
     "787.c1112931.chunk.js.map": "/static/js/787.c1112931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9fc12d0.css",
-    "static/js/main.8cec39f8.js"
+    "static/css/main.0229865a.css",
+    "static/js/main.9de0f614.js"
   ]
 }
