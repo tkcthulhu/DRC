@@ -78,7 +78,16 @@ export function Contact(props) {
 
   return (
     <>
-      <div>
+      <div className="container">
+        <h1 className="text-white text-center">CONTACT US</h1>
+        <br/><br/>
+        <h3 className="text-white text-center">We believe in building strong, long-term partnerships with our clients. From the initial consultation to ongoing support, we are dedicated to your success every step of the way.</h3>
+        <br/><br/>
+        <h3 className="text-white text-center">Experience the Dead Right Controls Difference</h3>
+        <br/><br/>
+        <h3 className="text-white text-center">At Dead Right Controls, we are passionate about automation and the endless possibilities it offers. We invite you to explore our comprehensive range of building automation solutions and experience the Dead Right Controls difference for yourself. Join the growing community of businesses that have embraced automation to propel their success in an increasingly competitive world.</h3>
+        <br/><br/>
+        <h3 className="text-white text-center">Automate your success with Dead Right Controls today.</h3>
         <div className="contact-form-wrapper d-flex justify-content-center text-white">
           <form
             ref={form}
@@ -86,11 +95,11 @@ export function Contact(props) {
             action="#"
             className="contact-form dark-bg-card"
           >
-            <h5 className="title">Contact us</h5>
-            <p className="description">
+            <h3 className="title">Contact us</h3>
+            <h5 classname="text-center">
               Do not hesitate to contact us for any automation needs or to
-              schedule a consultation!
-            </p>
+              schedule a consultation via the form below or <a href="tel:859-753-3244">call us</a> today!
+            </h5>
             <div>
               <input
                 name="customer_name"

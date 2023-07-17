@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Carousel from 'react-bootstrap/Carousel';
 
 import '../../css/home.css';
+import '../../css/effects.css';
 
 import slider_1 from '../../images/Slide_1.jpeg';
 import slider_2 from '../../images/Slide_2.jpeg';
@@ -179,14 +180,11 @@ export function Home(props) {
                     <div className="row justify-content-center">
                         {cards}
                     </div>
-                    {/* <br/><br/> 
-                    <h3 className="text-center">We believe in building strong, long-term partnerships with our clients. From the initial consultation to ongoing support, we are dedicated to your success every step of the way.</h3>
-                    <br/><br/>
-                    <h3 className="text-center">Experience the Dead Right Controls Difference</h3>
-                    <br/><br/>
-                    <h3 className="text-center">At Dead Right Controls, we are passionate about automation and the endless possibilities it offers. We invite you to explore our comprehensive range of building automation solutions and experience the Dead Right Controls difference for yourself. Join the growing community of businesses that have embraced automation to propel their success in an increasingly competitive world.</h3>
-                    <br/><br/>
-                    <h3 className="text-center">Automate your success with Dead Right Controls today.</h3> */}
+                    <button className="nav-button type1 text-white">
+                        <h1>
+                            SCHEDULE YOUR CONSULTATION
+                        </h1>
+                    </button>
 
                 </div>
             </div>
